@@ -1,9 +1,3 @@
-# KidsCanCode - Game Development with Pygame video series
-# Shmup game - part 14
-# Video link: https://www.youtube.com/watch?v=Z2K2Yttvr5g
-# Game Over Screen
-# Frozen Jam by tgfcoder <https://twitter.com/tgfcoder> licensed under CC-BY-3
-# Art from Kenney.nl
 import pygame
 import random
 from os import path
@@ -28,7 +22,7 @@ YELLOW = (255, 255, 0)
 pygame.init()
 pygame.mixer.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Shmup!")
+pygame.display.set_caption("PyGalaxy!")
 clock = pygame.time.Clock()
 
 font_name = pygame.font.match_font('arial')
@@ -231,7 +225,7 @@ class Explosion(pygame.sprite.Sprite):
 
 def show_go_screen():
     screen.blit(background, background_rect)
-    draw_text(screen, "SHMUP!", 64, WIDTH / 2, HEIGHT / 4)
+    draw_text(screen, "PyGalaxy!", 64, WIDTH / 2, HEIGHT / 4)
     draw_text(screen, "Arrow keys move, Space to fire", 22,
               WIDTH / 2, HEIGHT / 2)
     draw_text(screen, "Press a key to begin", 18, WIDTH / 2, HEIGHT * 3 / 4)
